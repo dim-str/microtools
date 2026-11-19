@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MicroTools | Fast, private utilities",
   description: "A collection of fast, browser-based micro tools.",
+  verification: {
+    google: "uUBPqgqhQibC6Fqu1wcMKOIZrohMAWKbrdKlt8hxEJ4",
+  },
 };
 
 export default function RootLayout({

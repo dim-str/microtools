@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { AdSlot } from "./ad-slot";
 import type { ToolMeta } from "@/lib/tools";
 import { ToolCalculationHint } from "./tool-calculation-hint";
+import { FAQSection } from "./faq-section";
 
 export function ToolShell({
   tool,
@@ -11,6 +12,19 @@ export function ToolShell({
   tool: ToolMeta;
   children: ReactNode;
 }) {
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: tool.faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  };
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <nav className="mb-4 text-sm text-muted-foreground">
@@ -30,6 +44,16 @@ export function ToolShell({
       <AdSlot slot="tool-top" className="my-6" />
 
       <section className="my-8">{children}</section>
+
+      <FAQSection faqs={tool.faqs} />
+      {tool.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqStructuredData).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
 
       <AdSlot slot="tool-bottom" className="my-6" />
     </main>

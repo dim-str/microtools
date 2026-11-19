@@ -1,8 +1,6 @@
 import { tools } from "@/lib/tools";
 import { siteUrl } from "@/lib/site-url";
 
-export const dynamic = "force-static";
-
 export function GET() {
   const content = [
     "# MicroTools.gr",

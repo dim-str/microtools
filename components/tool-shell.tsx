@@ -37,7 +37,7 @@ export function ToolShell({
 
       <div className="flex flex-wrap items-center gap-2">
         <h1 className="text-3xl font-bold tracking-tight">{tool.name}</h1>
-        <ToolCalculationHint slug={tool.slug} hint={tool.calculationHint} />
+        <ToolCalculationHint slug={tool.slug} hint={tool.calculationHint || ""} />
       </div>
       <p className="mt-2 text-muted-foreground">{tool.description}</p>
 

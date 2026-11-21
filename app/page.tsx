@@ -2,8 +2,16 @@ import Link from "next/link";
 import { tools } from "@/lib/tools";
 import { AdSlot } from "@/components/ad-slot";
 import { ArrowRight, Search } from "lucide-react";
+import { ToolSearch } from "@/components/tool-search";
 
 export default function Home() {
+
+  const toolData = tools.map((t) => ({
+    slug: t.slug,
+    name: t.name,
+    description: t.description,
+  }));
+
   return (
     <main className="mx-auto max-w-5xl px-4 py-8 sm:py-12 md:py-24">
       <div className="mb-10 flex flex-col items-center space-y-4 text-center sm:mb-16">
@@ -26,6 +34,8 @@ export default function Home() {
       </div>
 
       <AdSlot slot="home-top" className="mb-12" />
+
+      <ToolSearch tools={toolData} />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((t) => (

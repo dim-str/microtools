@@ -23,19 +23,10 @@ export default function Home() {
         <p className="max-w-2xl text-lg text-muted-foreground">
           Μια συλλογή από καθημερινά εργαλεία για την ελληνική αγορά. Χωρίς εγγραφές και χωρίς περιττά βήματα.
         </p>
-        <div className="relative mt-6 w-full max-w-md">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-          <input
-            type="text"
-            placeholder="Αναζήτηση εργαλείου..."
-            className="w-full rounded-full border border-border bg-background px-10 py-3 text-sm outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm"
-          />
-        </div>
+        <ToolSearch tools={toolData} />
       </div>
 
       <AdSlot slot="home-top" className="mb-12" />
-
-      <ToolSearch tools={toolData} />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((t) => (

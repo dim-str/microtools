@@ -1,14 +1,24 @@
 # MicroTools.gr
-> Δωρεάν, γρήγορα και ασφαλή εργαλεία υπολογισμών για την ελληνική αγορά.
+> Δωρεάν, γρήγορα και ασφαλή εργαλεία υπολογισμών για την ελληνική αγορά. Όλα τα δεδομένα επεξεργάζονται τοπικά στον browser του χρήστη.
 
 ## Εργαλεία
-- [Υπολογιστής Δώρου Χριστουγέννων & Πάσχα](https://microtools-phi.vercel.app/tools/doro-xristougennon-pasxa): Υπολογισμός αναλογικού δώρου.
-- [Αριθμογράφος](https://microtools-phi.vercel.app/tools/arithmografos): Μετατροπή ποσών σε ολογράφως.
-- [Έλεγχος ΑΦΜ & ΑΜΚΑ](https://microtools-phi.vercel.app/tools/afm-amka): Έλεγχος εγκυρότητας.
+- [Υπολογιστής Δώρου Χριστουγέννων & Πάσχα](https://microtools-phi.vercel.app/tools/doro-xristougennon-pasxa): Υπολογισμός αναλογικού δώρου με βάση μισθό και ημερομηνία πρόσληψης.
+- [Αριθμογράφος](https://microtools-phi.vercel.app/tools/arithmografos): Μετατροπή αριθμών και ποσών σε ολογράφως (λέξεις) για τιμολόγια και επιταγές.
+- [Έλεγχος Εγκυρότητας ΑΦΜ & ΑΜΚΑ](https://microtools-phi.vercel.app/tools/afm-amka): Μαθηματικός έλεγχος (checksum) για ΑΦΜ και ΑΜΚΑ.
+- [Μετατροπέας Greeklish](https://microtools-phi.vercel.app/tools/greeklish): Μετατροπή Greeklish σε Ελληνικά και αντίστροφα.
 - [Υπολογιστής ΦΠΑ](https://microtools-phi.vercel.app/tools/fpa): Προσθήκη ή αφαίρεση ΦΠΑ 24%, 13%, 6%.
-- [Greeklish to Greek](https://microtools-phi.vercel.app/tools/greeklish): Μετατροπέας κειμένου.
-- [Υπολογιστής Δόσης Δανείου](https://microtools-phi.vercel.app/tools/daneio): Υπολογισμός δόσεων.
-- [Υπολογιστής ΔΜΣ](https://microtools-phi.vercel.app/tools/bmi): Δείκτης Μάζας Σώματος.
+- [Κόστος Καυσίμου Ταξιδιού](https://microtools-phi.vercel.app/tools/kostos-kausimou): Υπολογισμός κόστους βενζίνης και κόστους ανά επιβάτη.
+- [Γεννήτρια Ισχυρών Κωδικών](https://microtools-phi.vercel.app/tools/password-generator): Δημιουργία ασφαλών κωδικών.
+- [Υπολογιστής Αποζημίωσης Απόλυσης](https://microtools-phi.vercel.app/tools/apolysi): Εκτίμηση αποζημίωσης βάσει ετών προϋπηρεσίας.
+- [Υπολογιστής Δόσης Δανείου](https://microtools-phi.vercel.app/tools/daneio): Υπολογισμός μηνιαίας δόσης και τόκων.
+- [Υπολογιστής ΔΜΣ](https://microtools-phi.vercel.app/tools/bmi): Δείκτης Μάζας Σώματος και Βασικός Μεταβολισμός.
+- [Υπολογιστής Επιδόματος Αδείας](https://microtools-phi.vercel.app/tools/epidoma-adeias): Υπολογισμός επιδόματος αδείας.
+- [Υπολογιστής Έκπτωσης](https://microtools-phi.vercel.app/tools/ekptosi): Υπολογισμός τελικής τιμής μετά από έκπτωση.
+- [Υπολογιστής Τεκμηρίων](https://microtools-phi.vercel.app/tools/tekmiria): Εκτίμηση τεκμηρίων αυτοκινήτου και κατοικίας.
+- [Μετρητής Λέξεων](https://microtools-phi.vercel.app/tools/word-counter): Μέτρηση λέξεων, χαρακτήρων και ορίων social media.
+- [Υπολογιστής Μορίων Πανελληνίων](https://microtools-phi.vercel.app/tools/moria): Εκτίμηση μορίων με βάση τους βαθμούς.
 
 ## Πληροφορίες
-Όλα τα εργαλεία εκτελούνται τοπικά στον browser του χρήστη (client-side). Δεν αποθηκεύονται προσωπικά δεδομένα.
+- Όλα τα εργαλεία είναι 100% client-side (δεν αποστέλλονται δεδομένα σε servers).
+- Η ιστοσελίδα είναι διαθέσιμη στα Ελληνικά.
+- Για επικοινωνία: [το email σου]

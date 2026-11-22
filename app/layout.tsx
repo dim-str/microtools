@@ -23,6 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="el" className="antialiased">
+      {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
+      )}
       <body className={inter.className}>
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
